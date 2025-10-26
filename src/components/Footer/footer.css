@@ -99,7 +99,6 @@
 .app-button {
   display: flex;
   align-items: center;
-  width: 175px;
   gap: 12px;
   padding: 12px 16px;
   background-color: #000;

@@ -4,18 +4,18 @@ import './vehicles.css';
 
 function Vehicles() {
   const allCars = [
-    { id: 1, brand: "Mercedes", model: "Sedan", price: 25, type: "Sedan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 2, brand: "BMW", model: "3 Series", price: 30, type: "Sedan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 3, brand: "Audi", model: "A4", price: 28, type: "Sedan", transmission: "Manual", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 4, brand: "Porsche", model: "911", price: 80, type: "Cabriolet", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 5, brand: "Mercedes", model: "SL", price: 85, type: "Cabriolet", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 6, brand: "Ford", model: "Ranger", price: 45, type: "Pickup", transmission: "Manual", fuel: "Diesel", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 7, brand: "Toyota", model: "Hilux", price: 50, type: "Pickup", transmission: "Automat", fuel: "Diesel", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 8, brand: "Porsche", model: "Cayenne", price: 70, type: "Suv", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 9, brand: "Jeep", model: "Wrangler", price: 60, type: "Suv", transmission: "Manual", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 10, brand: "Toyota", model: "Land Cruiser", price: 65, type: "Suv", transmission: "Automat", fuel: "Diesel", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 11, brand: "Mercedes", model: "V-Class", price: 55, type: "Minivan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
-    { id: 12, brand: "Toyota", model: "Alphard", price: 60, type: "Minivan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/car.png" },
+    { id: 1, brand: "Mercedes", model: "Sedan", price: 25, type: "Sedan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/mercedes-3.png" },
+    { id: 2, brand: "BMW", model: "3 Series", price: 30, type: "Sedan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/mercedes-1.png" },
+    { id: 3, brand: "Audi", model: "A4", price: 28, type: "Sedan", transmission: "Manual", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/mercedes-2.png" },
+    { id: 4, brand: "Porsche", model: "911", price: 80, type: "Cabriolet", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/porsche.png" },
+    { id: 5, brand: "Mercedes", model: "SL", price: 85, type: "Cabriolet", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/toyota-2.png" },
+    { id: 6, brand: "Ford", model: "Ranger", price: 45, type: "Pickup", transmission: "Manual", fuel: "Diesel", ac: true, image: "./accets/vehicles/avto/porsche-bl.png" },
+    { id: 7, brand: "Toyota", model: "Hilux", price: 50, type: "Pickup", transmission: "Automat", fuel: "Diesel", ac: true, image: "./accets/vehicles/avto/mercedes-4.png" },
+    { id: 8, brand: "Porsche", model: "Cayenne", price: 70, type: "Suv", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/toyota.png" },
+    { id: 9, brand: "Jeep", model: "Wrangler", price: 60, type: "Suv", transmission: "Manual", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/maybach.png" },
+    { id: 10, brand: "Toyota", model: "Land Cruiser", price: 65, type: "Suv", transmission: "Automat", fuel: "Diesel", ac: true, image: "./accets/vehicles/avto/toyota.png" },
+    { id: 11, brand: "Mercedes", model: "V-Class", price: 55, type: "Minivan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/mercedes-1.png" },
+    { id: 12, brand: "Toyota", model: "Alphard", price: 60, type: "Minivan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/toyota-2.png" },
   ];
 
   const [activeFilter, setActiveFilter] = useState('All vehicles');
@@ -45,7 +45,6 @@ function Vehicles() {
           <div className="cars-grid">
             {filteredCars.map((car, index) => (
               <div key={car.id} className="car-card">
-                {/* Анимация загрузки + fallback */}
                 <div className="car-image-wrapper">
                   <img
                     src={car.image}
