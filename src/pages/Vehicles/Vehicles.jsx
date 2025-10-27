@@ -5,7 +5,7 @@ import './vehicles.css';
 function Vehicles() {
   const allCars = [
     { id: 1, brand: "Mercedes", model: "Sedan", price: 25, type: "Sedan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/mercedes-3.png" },
-    { id: 2, brand: "BMW", model: "3 Series", price: 30, type: "Sedan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/mercedes-1.png" },
+    { id: 2, brand: "BMW", model: "3 Series", price: 30, type: "Sedan", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/bmw.png" },
     { id: 3, brand: "Audi", model: "A4", price: 28, type: "Sedan", transmission: "Manual", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/mercedes-2.png" },
     { id: 4, brand: "Porsche", model: "911", price: 80, type: "Cabriolet", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/porsche.png" },
     { id: 5, brand: "Mercedes", model: "SL", price: 85, type: "Cabriolet", transmission: "Automat", fuel: "PB 95", ac: true, image: "./accets/vehicles/avto/toyota-2.png" },

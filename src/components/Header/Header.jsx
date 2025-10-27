@@ -15,7 +15,6 @@ function Header() {
                             <a href="/vehicles" className="nav-link">Vehicles</a>
                             <a href="/details" className="nav-link">Details</a>
                             <a href="/about" className="nav-link">About Us</a>
-                            <a href="#" className="nav-link">Contact Us</a>
                 </nav>
 
                 <div className="contact">
