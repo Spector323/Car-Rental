@@ -21,7 +21,7 @@ function Home() {
               Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida.
               Quis nunc interdum gravida ullamcorper
             </p>
-            <button className="hero-button">View all cars</button>
+            <a href="/vehicles"><button className="hero-button" >View all cars</button></a>
           </div>
           <div className="booking-form">
             <h2 className="form-title">Book your car</h2>
